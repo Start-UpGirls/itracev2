@@ -3,7 +3,8 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center'
+        flexWrap: 'wrap',
+        alignItems: 'flex-start'
     },
 
     formContainer: {
@@ -25,7 +26,7 @@ export default StyleSheet.create({
         margin: 5,
         height: 100,
         width: 100,
-        resizeMode : 'stretch',
+        resizeMode : 'center',
       
      },
 
@@ -43,12 +44,14 @@ export default StyleSheet.create({
         backgroundColor: '#788eec',
         width: 80,
         alignItems: "center",
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginLeft: 150
     },
 
     buttonText: {
         color: 'white',
         fontSize: 16
+        
     },
 
     footerView: {
