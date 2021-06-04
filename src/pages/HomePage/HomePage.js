@@ -21,6 +21,10 @@ export default function HomePage({navigation}) {
         navigation.navigate('Helpdesk')
     }
 
+    const onHotPress = () => {
+        navigation.navigate('Hotspot')
+    }
+
     const onLogoutPress = () => {
         firebase
             .auth()
@@ -30,12 +34,12 @@ export default function HomePage({navigation}) {
 
     return (
         <View style={styles.container}>
-            <View style={styles.formContainer}>
+           <View style={{flexDirection:'row', alignItems:'center', flexWrap: 'wrap', marginTop: 110, marginLeft: 30}}>
 
              <TouchableOpacity 
                 onPress={() => onAssessPress()}> 
                     <Image  
-                        source = {require('../../../assets/checkin.png')}  
+                        source = {require('../../../assets/health.png')}  
                         style = {styles.ImageIconStyle} 
                     /> 
                     <View style={styles.SeparatorLine} /> 
@@ -44,7 +48,7 @@ export default function HomePage({navigation}) {
              <TouchableOpacity 
                 onPress={() => onProfilePress()}> 
                     <Image  
-                        source = {require('../../../assets/checkin.png')}  
+                        source = {require('../../../assets/profile.png')}  
                         style = {styles.ImageIconStyle} 
                     /> 
                     <View style={styles.SeparatorLine} /> 
@@ -68,19 +72,30 @@ export default function HomePage({navigation}) {
                     <View style={styles.SeparatorLine} /> 
              </TouchableOpacity> 
 
+             <TouchableOpacity 
+                onPress={() => onHotPress()}> 
+                    <Image  
+                        source = {require('../../../assets/hotspot.png')}  
+                        style = {styles.ImageIconStyle} 
+                    /> 
+                    <View style={styles.SeparatorLine} /> 
+             </TouchableOpacity>
+
+            </View>
+            
+            <View style={{flex: 1,alignItems: "center"}} /> 
             <TouchableOpacity
                     style={styles.button}
                     onPress={() => onLogoutPress()}>
                     <Text style={styles.buttonTitle}>Log Out</Text>
             </TouchableOpacity>
 
-            <View style={styles.footerView}>
-                <Text style = {styles.footerText}> {"\n"}{"\n"} © Start-Up; 2021</Text>
+            <View style={styles.container}>
+            <View style={{flex: 1,alignItems: "bottom", marginTop: 10}}>
+                <Text style={{flex: 1 ,alignItems: "center"}}> {"\n"}{"\n"} © Start-Up; 2021</Text>
             </View>
 
-
-            </View>
-            
+ </View>
         </View>
     )
 }

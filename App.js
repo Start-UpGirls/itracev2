@@ -13,6 +13,7 @@ import { LoginPage,
           ProfilePage,
           SopPage,
           HelpPage,
+          HotPage,
         } from './src/pages'
 import {decode, encode} from 'base-64'
 if (!global.btoa) {  global.btoa = encode }
@@ -82,10 +83,9 @@ export default function App() {
               name="Scanner" 
               component={ Scanner }
               options = {{ title: 'Scan QR Code'}} />
-            <Stack.Screen 
-              name="Profile" 
-              component={ ProfilePage }
-              options = {{ title: 'Profile'}} />
+            <Stack.Screen name="Profile" options={{title: 'Profile'}}>
+            {props => <ProfilePage {...props} extraData={user}/>}
+            </Stack.Screen>
             <Stack.Screen 
               name="SOP" 
               component={ SopPage }
@@ -94,6 +94,10 @@ export default function App() {
               name="Helpdesk" 
               component={ HelpPage }
               options = {{ title: 'Help Desk'}} />
+            <Stack.Screen 
+              name="Hotspot" 
+              component={ HotPage }
+              options = {{ title: 'Hot Spots for COVID19'}} />
       </Stack.Navigator>
     </NavigationContainer>
   );
