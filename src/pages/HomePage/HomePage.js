@@ -34,7 +34,7 @@ export default function HomePage({navigation}) {
 
     return (
         <View style={styles.container}>
-           <View style={{flexDirection:'row', alignItems:'center', flexWrap: 'wrap', marginTop: 110, marginLeft: 30}}>
+            <View style={{flexDirection:'row', alignItems:'center', flexWrap: 'wrap', marginTop: 110, marginLeft: 30}}>
 
              <TouchableOpacity 
                 onPress={() => onAssessPress()}> 

@@ -6,6 +6,7 @@ import styles from './styles';
 
 class ProfilePage extends Component {
 
+
   constructor() {
     super();
     this.state = {
