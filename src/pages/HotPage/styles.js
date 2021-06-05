@@ -24,25 +24,29 @@ export default StyleSheet.create({
 
     word: {
         
+        fontSize: 20, 
+        fontFamily: 'sans-serif',
         alignSelf: "center",
 
     }, 
 
     button: {
         backgroundColor: '#252222',
-        marginLeft: 30,
+        marginLeft: 100,
         marginRight: 30,
         marginTop: 20,
-        height: 48,
+        height: 100,
         borderRadius: 5,
         alignItems: "center",
-        justifyContent: 'center'
+        justifyContent: 'center',
+        width: '45%'
     },
 
     buttonTitle: {
         color: 'white',
-        fontSize: 16,
-        fontWeight: "bold"
+        fontSize: 20,
+        fontWeight: "bold",
+        textAlign: 'center'
     },
 
     footerView: {

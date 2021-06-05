@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { firebase } from '../../firebase/config'
 import styles from './styles';
@@ -9,7 +9,7 @@ class HotPage extends Component {
    state = {
       places: [] 
     }
-
+   
     constructor(props) {
       super(props);
       this.subscriber =
@@ -36,25 +36,86 @@ class HotPage extends Component {
                     style={styles.logo}
                     source={require('../../../assets/logoiium.png')}
                 />
-                
+               
                { this.state.places.map((place, index) => <View key = {index}>
-               <Text style={styles.word}>Ali Bin Abu Talib = {Number(place.ali)}</Text>
-               <Text style={styles.word}>Al-Faruq = {Number(place.faruq)}</Text>
-               <Text style={styles.word}>Aminah = {Number(place.aminah)}</Text>
-               <Text style={styles.word}>As-Siddiq = {Number(place.siddiq)}</Text>
-               <Text style={styles.word}>Asiah = {Number(place.asiah)}</Text>
-               <Text style={styles.word}>Asma = {Number(place.asma)}</Text>
-               <Text style={styles.word}>Bilal Bin Rabah = {Number(place.bilal)}</Text>
-               <Text style={styles.word}>Hafsa = {Number(place.hafsa)}</Text>
-               <Text style={styles.word}>Halimatus Saadiyah = {Number(place.halimah)}</Text>
-               <Text style={styles.word}>Maryam = {Number(place.maryam)}</Text>
-               <Text style={styles.word}>Nusaibah = {Number(place.nusaibah)}</Text>
-               <Text style={styles.word}>Ruqayyah = {Number(place.ruqayyah)}</Text>
-               <Text style={styles.word}>Safiyyah = {Number(place.safiyyah)}</Text>
-               <Text style={styles.word}>Salahuddin Al-Ayyubi = {Number(place.salah)}</Text>
-               <Text style={styles.word}>Sumayyah = {Number(place.sumayyah)}</Text>
-               <Text style={styles.word}>Uthman Bin Al-Affan = {Number(place.uthman)}</Text>
-               <Text style={styles.word}>Zubair Al-Awwam = {Number(place.zubair)}</Text>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Ali Bin Abu Talib </Text>
+                    <Text style={styles.buttonTitle}>{Number(place.ali)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Al-Faruq</Text>
+                    <Text style={styles.buttonTitle}>{Number(place.faruq)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Aminah </Text>
+                    <Text style={styles.buttonTitle}>{Number(place.aminah)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>As-Siddiq </Text>
+                    <Text style={styles.buttonTitle}>{Number(place.siddiq)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Asiah </Text>
+                    <Text style={styles.buttonTitle}>{Number(place.asiah)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Asma</Text>
+                    <Text style={styles.buttonTitle}>{Number(place.asma)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Bilal Bin Rabah</Text>
+                    <Text style={styles.buttonTitle}>{Number(place.bilal)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Hafsa </Text>
+                    <Text style={styles.buttonTitle}>{Number(place.hafsa)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Halimatus Saadiyah </Text>
+                    <Text style={styles.buttonTitle}>{Number(place.halimah)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Maryam = {Number(place.maryam)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Nusaibah = {Number(place.nusaibah)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Ruqayyah = {Number(place.ruqayyah)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Safiyyah = {Number(place.safiyyah)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Salahuddin Al-Ayyubi = {Number(place.salah)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Sumayyah = {Number(place.sumayyah)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Uthman Bin Al-Affan = {Number(place.uthman)}</Text>
+               </View>
+               <View
+                    style={styles.button}>
+                    <Text style={styles.buttonTitle}>Zubair Al-Awwam = {Number(place.zubair)}</Text>
+               </View>
+              
                </View>)}
 
 
