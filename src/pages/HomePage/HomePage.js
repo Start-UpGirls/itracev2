@@ -1,5 +1,6 @@
 import React from 'react'
 import { Image, Text, TouchableOpacity, View } from 'react-native'
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import styles from './styles';
 import { firebase } from '../../firebase/config'
 
@@ -34,6 +35,7 @@ export default function HomePage({navigation}) {
 
     return (
         <View style={styles.container}>
+        <KeyboardAwareScrollView>
             <View style={{flexDirection:'row', alignItems:'center', flexWrap: 'wrap', marginTop: 110, marginLeft: 30}}>
             <TouchableOpacity 
                 onPress={() => onProfilePress()}> 
@@ -90,12 +92,11 @@ export default function HomePage({navigation}) {
                     <Text style={styles.buttonTitle}>Log Out</Text>
             </TouchableOpacity>
 
-            <View style={styles.container}>
-            <View style={{flex: 1,alignItems: "bottom", marginTop: 10}}>
-                <Text style={{flex: 1 ,alignItems: "center"}}> {"\n"}{"\n"} © Start-Up; 2021</Text>
+            <View style={styles.footerView}>
+                    <Text style = {styles.footerText}> {"\n"}{"\n"} © Start-Up; 2021</Text>
             </View>
-
+</KeyboardAwareScrollView>
  </View>
-        </View>
+       
     )
 }

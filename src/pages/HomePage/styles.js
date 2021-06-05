@@ -4,7 +4,8 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         flexWrap: 'wrap',
-        alignItems: 'flex-start'
+        alignItems: 'flex-start',
+        backgroundColor: '#D2E4D2',
     },
 
     formContainer: {
@@ -27,12 +28,12 @@ export default StyleSheet.create({
         height: 100,
         width: 100,
         resizeMode : 'center',
+        borderRadius: 20,
       
      },
 
      SeparatorLine :{
  
-        backgroundColor : '#fff',
         width: 1,
         height: 40
          
@@ -41,11 +42,12 @@ export default StyleSheet.create({
     button: {
         height: 47,
         borderRadius: 5,
-        backgroundColor: '#788eec',
-        width: 80,
+        backgroundColor:'#9bcd9b',
+        width: 300,
         alignItems: "center",
         justifyContent: 'center',
-        marginLeft: 150
+        marginLeft: 50,
+        marginTop: 100,
     },
 
     buttonText: {

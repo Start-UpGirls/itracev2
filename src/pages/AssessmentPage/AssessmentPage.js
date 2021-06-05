@@ -98,7 +98,7 @@ export default function AssessmentPage({navigation}) {
                     placeholderTextColor="#aaaaaa"
                     onChangeText={(text) => setConditionText1(text)}
                     value={conditionText1}
-                    underlineColorAndroid="transparent"
+                    underlineColorAndroid="#e0ffff"
                     autoCapitalize="none"
                 />
 

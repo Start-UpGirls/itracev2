@@ -70,7 +70,8 @@ export default function RegistrationPage({navigation}) {
                 <TextInput
                     style={styles.input}
                     placeholder='Full Name'
-                    placeholderTextColor="#aaaaaa"
+                    placeholderTextColor="#e0ffff"
+                    placeholderColor="#e0ffff"
                     onChangeText={(text) => setFullName(text)}
                     value={fullName}
                     underlineColorAndroid="transparent"
@@ -79,7 +80,7 @@ export default function RegistrationPage({navigation}) {
                 <TextInput
                     style={styles.input}
                     placeholder='E-mail'
-                    placeholderTextColor="#aaaaaa"
+                    placeholderTextColor="#e0ffff"
                     onChangeText={(text) => setEmail(text)}
                     value={email}
                     underlineColorAndroid="transparent"
@@ -89,7 +90,7 @@ export default function RegistrationPage({navigation}) {
                 <TextInput
                     style={styles.input}
                     placeholder='Matric Number'
-                    placeholderTextColor="#aaaaaa"
+                    placeholderTextColor="#e0ffff"
                     onChangeText={(text) => setMatricNum(text)}
                     value={matricNum}
                     underlineColorAndroid="transparent"
@@ -99,7 +100,7 @@ export default function RegistrationPage({navigation}) {
                 <TextInput
                     style={styles.input}
                     placeholder='Kulliyyah'
-                    placeholderTextColor="#aaaaaa"
+                    placeholderTextColor="#e0ffff"
                     onChangeText={(text) => setKulliyyah(text)}
                     value={kulliyyah}
                     underlineColorAndroid="transparent"
@@ -109,7 +110,7 @@ export default function RegistrationPage({navigation}) {
                 <TextInput
                     style={styles.input}
                     placeholder='Contact No.'
-                    placeholderTextColor="#aaaaaa"
+                    placeholderTextColor="#e0ffff"
                     onChangeText={(text) => setContactNum(text)}
                     value={contactNum}
                     underlineColorAndroid="transparent"
@@ -119,7 +120,7 @@ export default function RegistrationPage({navigation}) {
                 <TextInput
                     style={styles.input}
                     placeholder='Home Address'
-                    placeholderTextColor="#aaaaaa"
+                    placeholderTextColor="#e0ffff"
                     onChangeText={(text) => setAddress(text)}
                     value={address}
                     underlineColorAndroid="transparent"
@@ -128,7 +129,7 @@ export default function RegistrationPage({navigation}) {
 
                 <TextInput
                     style={styles.input}
-                    placeholderTextColor="#aaaaaa"
+                    placeholderTextColor="#e0ffff"
                     secureTextEntry
                     placeholder='Password'
                     onChangeText={(text) => setPassword(text)}
@@ -138,7 +139,7 @@ export default function RegistrationPage({navigation}) {
                 />
                 <TextInput
                     style={styles.input}
-                    placeholderTextColor="#aaaaaa"
+                    placeholderTextColor="#e0ffff"
                     secureTextEntry
                     placeholder='Confirm Password'
                     onChangeText={(text) => setConfirmPassword(text)}

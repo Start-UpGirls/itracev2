@@ -3,46 +3,58 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center'
+        flexWrap: 'wrap',
+        alignItems: 'flex-start',
+        backgroundColor: '#D2E4D2',
     },
 
-    logo: {
+    formContainer: {
+        flexDirection: 'row',
+        height: 80,
+        marginTop: 40,
+        marginBottom: 20,
         flex: 1,
-        height: 200,
-        width: 160,
-        alignSelf: "center",
-        margin: 30
+        paddingTop: 10,
+        paddingBottom: 10,
+        paddingLeft: 30,
+        paddingRight: 30,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#D2E4D2',
     },
 
-    word: {
-        height: 60,
-        marginLeft: 30,
-        marginBottom: -30,
-        marginTop: 10,
-    }, 
+    ImageIconStyle: {
+        padding: 10,
+        margin: 5,
+        height: 100,
+        width: 100,
+        resizeMode : 'center',
+        borderRadius: 20,
+      
+     },
 
-    header: {
-        flex: 1,
-        marginLeft: 500,
-        marginTop: 50,
-        fontSize: 30,
+     SeparatorLine :{
+ 
+        width: 1,
+        height: 40
+         
     },
 
     button: {
-        backgroundColor: '#252222',
-        marginLeft: 30,
-        marginRight: 30,
-        marginTop: 20,
-        height: 48,
+        height: 47,
         borderRadius: 5,
+        backgroundColor:'#9bcd9b',
+        width: 300,
         alignItems: "center",
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginLeft: 50,
+        marginTop: 100,
     },
 
-    buttonTitle: {
+    buttonText: {
         color: 'white',
-        fontSize: 16,
-        fontWeight: "bold"
+        fontSize: 16
+        
     },
 
     footerView: {
@@ -50,9 +62,9 @@ export default StyleSheet.create({
         alignItems: "center",
         marginTop: 20
     },
-    
     footerText: {
         fontSize: 16,
         color: '#2e2e2d'
     }
+
 })
