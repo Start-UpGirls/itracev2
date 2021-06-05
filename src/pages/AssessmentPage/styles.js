@@ -71,6 +71,14 @@ export default StyleSheet.create({
         fontSize: 16,
         fontWeight: "bold"
     },
+    
+       switch: {
+          flex: 1,
+          width:9,
+          alignItems: "center",
+          justifyContent: "center"
+        },
+    
     footerView: {
         flex: 1,
         alignItems: "center",
