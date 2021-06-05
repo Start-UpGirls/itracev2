@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, Text, TouchableOpacity, View } from 'react-native'
+import { Image, Text, TouchableOpacity, View,ImageBackground } from 'react-native'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import styles from './styles';
 import { firebase } from '../../firebase/config'
@@ -35,6 +35,7 @@ export default function HomePage({navigation}) {
 
     return (
         <View style={styles.container}>
+         <ImageBackground source={require('../../../assets/background1.jpeg')} style={styles.image}>
         <KeyboardAwareScrollView>
             <View style={{flexDirection:'row', alignItems:'center', flexWrap: 'wrap', marginTop: 110, marginLeft: 30}}>
             <TouchableOpacity 
@@ -96,6 +97,7 @@ export default function HomePage({navigation}) {
                     <Text style = {styles.footerText}> {"\n"}{"\n"} © Start-Up; 2021</Text>
             </View>
 </KeyboardAwareScrollView>
+</ImageBackground>
  </View>
        
     )

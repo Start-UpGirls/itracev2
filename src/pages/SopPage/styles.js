@@ -13,6 +13,13 @@ export default StyleSheet.create({
         alignSelf: "center",
         margin: 30
     },
+    image2: {
+        flex: 1,
+        resizeMode: "cover",
+        width: 450,
+        height: 820,
+        justifyContent: "center"
+      },
 
     image: {
         flex: 1,

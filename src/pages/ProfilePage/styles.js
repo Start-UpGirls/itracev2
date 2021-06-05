@@ -13,6 +13,13 @@ export default StyleSheet.create({
         alignSelf: "center",
         margin: 30
     },
+    image: {
+        flex: 1,
+        resizeMode: "cover",
+        width: 450,
+        height: 820,
+        justifyContent: "center"
+      },
 
     input: {
         height: 48,
@@ -34,7 +41,7 @@ export default StyleSheet.create({
     }, 
 
     button: {
-        backgroundColor: '#252222',
+        backgroundColor: '#ffcce7',
         marginLeft: 30,
         marginRight: 30,
         marginTop: 20,
@@ -45,7 +52,7 @@ export default StyleSheet.create({
     },
 
     buttonTitle: {
-        color: 'white',
+        color: 'black',
         fontSize: 16,
         fontWeight: "bold"
     },

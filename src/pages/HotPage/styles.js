@@ -29,9 +29,16 @@ export default StyleSheet.create({
         alignSelf: "center",
 
     }, 
+    image: {
+        flex: 1,
+        resizeMode: "cover",
+        width: 450,
+        height: 820,
+        justifyContent: "center"
+      },
 
     button: {
-        backgroundColor: '#bc8f8f',
+        backgroundColor: '#ffcce7',
         marginLeft: 100,
         marginRight: 30,
         marginTop: 20,
@@ -43,7 +50,7 @@ export default StyleSheet.create({
     },
 
     buttonTitle: {
-        color: 'grey',
+        color: 'black',
         fontSize: 20,
         fontWeight: "bold",
         textAlign: 'center'

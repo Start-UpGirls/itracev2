@@ -5,7 +5,7 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        backgroundColor:'#9bcd9b'
+        backgroundColor:'#daf2dc'
     },
 
     logo: {
@@ -16,6 +16,14 @@ export default StyleSheet.create({
         margin: 30
     },
 
+    image: {
+        flex: 1,
+        resizeMode: "cover",
+        width: 450,
+        height: 820,
+        justifyContent: "center"
+      },
+
     word: {
         flex: 1,
         marginTop: 50,
@@ -24,15 +32,20 @@ export default StyleSheet.create({
     },
 
     button: {
-        backgroundColor: '#e0ffff',
+        backgroundColor: '#ffcce7',
         marginLeft: 30,
         marginRight: 30,
         marginTop: 20,
         height: 48,
-        borderRadius: 5,
+        borderRadius: 10,
         alignItems: "center",
         justifyContent: 'center'
     },
+    backgroundImage: {
+        flex: 1,
+        resizeMode: 'cover', // or 'stretch',
+        justifyContent: 'center',
+      },
 
     buttonTitle: {
         color: 'black',
@@ -48,6 +61,7 @@ export default StyleSheet.create({
 
     footerText: {
         fontSize: 16,
-        color: '#2e2e2d'
+        color: '#2e2e2d',
+        marginTop: 150
     }
 })

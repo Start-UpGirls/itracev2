@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, Text, View } from 'react-native'
+import { Image, Text, View, ImageBackground } from 'react-native'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import styles from './styles';
 
@@ -7,6 +7,7 @@ export default function SopPage({props}) {
 
     return (
         <View style={styles.container}>
+         <ImageBackground source={require('../../../assets/background1.jpeg')} style={styles.image2}>
             <KeyboardAwareScrollView
                 style={{ flex: 1, width: '100%' }}
                 keyboardShouldPersistTaps="always">
@@ -24,6 +25,7 @@ export default function SopPage({props}) {
                     <Text style = {styles.footerText}> {"\n"}{"\n"} © Start-Up; 2021</Text>
                 </View>
             </KeyboardAwareScrollView>
+            </ImageBackground>
         </View>
     )
 }

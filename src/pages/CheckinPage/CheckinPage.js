@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Image, Text, TouchableOpacity } from 'react-native';
+import { View, Image, Text, TouchableOpacity,ImageBackground } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { firebase } from '../../firebase/config'
 import styles from './styles';
@@ -32,6 +32,7 @@ class CheckinPage extends Component {
   render() {
     return (
       <View style = {styles.container}>
+      <ImageBackground source={require('../../../assets/background1.jpeg')} style={styles.image}>
         <KeyboardAwareScrollView
           style={{ flex: 1, width: '100%' }}
           keyboardShouldPersistTaps="always">
@@ -61,6 +62,7 @@ class CheckinPage extends Component {
             </View>
             
         </KeyboardAwareScrollView>
+        </ImageBackground>
       </View>
     )
   }

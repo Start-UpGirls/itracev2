@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image, TouchableOpacity } from 'react-native'
+import { View, Text, Image, TouchableOpacity, ImageBackground } from 'react-native'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { firebase } from '../../firebase/config'
 import styles from './styles';
@@ -29,6 +29,7 @@ class HotPage extends Component {
    render() {
       return (
          <View style={styles.container}>
+          <ImageBackground source={require('../../../assets/background1.jpeg')} style={styles.image}>
             <KeyboardAwareScrollView
                style={{ flex: 1, width: '100%' }}
                keyboardShouldPersistTaps="always">
@@ -131,6 +132,7 @@ class HotPage extends Component {
                     <Text style = {styles.footerText}> {"\n"}{"\n"} © Start-Up; 2021</Text>
                </View>
             </KeyboardAwareScrollView>
+            </ImageBackground>
          </View>
       )
    }

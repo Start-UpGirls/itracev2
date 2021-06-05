@@ -21,6 +21,13 @@ export default StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
+    image: {
+        flex: 1,
+        resizeMode: "cover",
+        width: 450,
+        height: 820,
+        justifyContent: "center"
+      },
 
     ImageIconStyle: {
         padding: 10,
@@ -42,7 +49,7 @@ export default StyleSheet.create({
     button: {
         height: 47,
         borderRadius: 5,
-        backgroundColor:'#9bcd9b',
+        backgroundColor:'#ffcce7',
         width: 300,
         alignItems: "center",
         justifyContent: 'center',
@@ -51,7 +58,7 @@ export default StyleSheet.create({
     },
 
     buttonText: {
-        color: 'white',
+        color: 'black',
         fontSize: 16
         
     },

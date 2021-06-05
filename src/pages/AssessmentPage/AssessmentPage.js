@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {  Image, Text, TextInput, TouchableOpacity, View, Keyboard, CheckBox } from 'react-native'
+import {  Image, Text, TextInput, TouchableOpacity, View, Keyboard, CheckBox,ImageBackground } from 'react-native'
 import { firebase } from '../../firebase/config'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import styles from './styles';
@@ -83,6 +83,7 @@ export default function AssessmentPage({navigation}) {
 
     return (
         <View style={styles.container}>
+        <ImageBackground source={require('../../../assets/background1.jpeg')} style={styles.image}>
             <KeyboardAwareScrollView
                 style={{ flex: 1, width: '100%' }}
                 keyboardShouldPersistTaps="always">
@@ -210,6 +211,7 @@ export default function AssessmentPage({navigation}) {
                     <Text style = {styles.footerText}>{"\n"}{"\n"} © Start-Up; 2021</Text>
                 </View>
             </KeyboardAwareScrollView>
+            </ImageBackground>
         </View>
     );
 }

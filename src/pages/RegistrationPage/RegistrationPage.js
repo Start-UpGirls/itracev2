@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Image, Text, TextInput, TouchableOpacity, View, ImageBackground } from 'react-native'
 import { firebase } from '../../firebase/config'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import styles from './styles';
@@ -16,7 +16,7 @@ export default function RegistrationPage({navigation}) {
     const [confirmPassword, setConfirmPassword] = useState('')
 
     const onFooterLinkPress = () => {
-        props.navigation.navigate('Login')
+        navigation.navigate('Login')
     }
 
     const onRegisterPress = () => {
@@ -59,6 +59,7 @@ export default function RegistrationPage({navigation}) {
 
     return (
         <View style={styles.container}>
+         <ImageBackground source={require('../../../assets/background1.jpeg')} style={styles.image}>
             <KeyboardAwareScrollView
                 style={{ flex: 1, width: '100%' }}
                 keyboardShouldPersistTaps="always">
@@ -70,8 +71,7 @@ export default function RegistrationPage({navigation}) {
                 <TextInput
                     style={styles.input}
                     placeholder='Full Name'
-                    placeholderTextColor="#e0ffff"
-                    placeholderColor="#e0ffff"
+                    placeholderTextColor="#aaaaaa"
                     onChangeText={(text) => setFullName(text)}
                     value={fullName}
                     underlineColorAndroid="transparent"
@@ -80,7 +80,7 @@ export default function RegistrationPage({navigation}) {
                 <TextInput
                     style={styles.input}
                     placeholder='E-mail'
-                    placeholderTextColor="#e0ffff"
+                    placeholderTextColor="#aaaaaa"
                     onChangeText={(text) => setEmail(text)}
                     value={email}
                     underlineColorAndroid="transparent"
@@ -90,7 +90,7 @@ export default function RegistrationPage({navigation}) {
                 <TextInput
                     style={styles.input}
                     placeholder='Matric Number'
-                    placeholderTextColor="#e0ffff"
+                    placeholderTextColor="#aaaaaa"
                     onChangeText={(text) => setMatricNum(text)}
                     value={matricNum}
                     underlineColorAndroid="transparent"
@@ -100,7 +100,7 @@ export default function RegistrationPage({navigation}) {
                 <TextInput
                     style={styles.input}
                     placeholder='Kulliyyah'
-                    placeholderTextColor="#e0ffff"
+                    placeholderTextColor="#aaaaaa"
                     onChangeText={(text) => setKulliyyah(text)}
                     value={kulliyyah}
                     underlineColorAndroid="transparent"
@@ -110,7 +110,7 @@ export default function RegistrationPage({navigation}) {
                 <TextInput
                     style={styles.input}
                     placeholder='Contact No.'
-                    placeholderTextColor="#e0ffff"
+                    placeholderTextColor="#aaaaaa"
                     onChangeText={(text) => setContactNum(text)}
                     value={contactNum}
                     underlineColorAndroid="transparent"
@@ -120,7 +120,7 @@ export default function RegistrationPage({navigation}) {
                 <TextInput
                     style={styles.input}
                     placeholder='Home Address'
-                    placeholderTextColor="#e0ffff"
+                    placeholderTextColor="#aaaaaa"
                     onChangeText={(text) => setAddress(text)}
                     value={address}
                     underlineColorAndroid="transparent"
@@ -129,7 +129,7 @@ export default function RegistrationPage({navigation}) {
 
                 <TextInput
                     style={styles.input}
-                    placeholderTextColor="#e0ffff"
+                    placeholderTextColor="#aaaaaa"
                     secureTextEntry
                     placeholder='Password'
                     onChangeText={(text) => setPassword(text)}
@@ -139,7 +139,7 @@ export default function RegistrationPage({navigation}) {
                 />
                 <TextInput
                     style={styles.input}
-                    placeholderTextColor="#e0ffff"
+                    placeholderTextColor="##aaaaaa"
                     secureTextEntry
                     placeholder='Confirm Password'
                     onChangeText={(text) => setConfirmPassword(text)}
@@ -159,6 +159,7 @@ export default function RegistrationPage({navigation}) {
                     <Text style = {styles.footerText}>{"\n"}{"\n"} © Start-Up; 2021</Text>
                 </View>
             </KeyboardAwareScrollView>
+            </ImageBackground>
         </View>
     )
 }
