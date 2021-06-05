@@ -51,4 +51,12 @@ export default function CheckinPage({navigation}) {
         height: '50%', 
         marginBottom: 40
       },
+
+      image: {
+        flex: 1,
+        resizeMode: "cover",
+        width: 450,
+        height: 820,
+        justifyContent: "center"
+      }
     });
