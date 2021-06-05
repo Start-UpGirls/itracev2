@@ -22,6 +22,10 @@ export default function HomePage({navigation}) {
         navigation.navigate('Helpdesk')
     }
 
+    const onOutingPress = () => {
+        navigation.navigate('Outing')
+    }
+
     const onHotPress = () => {
         navigation.navigate('Hotspot')
     }
@@ -70,6 +74,15 @@ export default function HomePage({navigation}) {
                 onPress={() => onHelpPress()}> 
                     <Image  
                         source = {require('../../../assets/helpdesk.png')}  
+                        style = {styles.ImageIconStyle} 
+                    /> 
+                    <View style={styles.SeparatorLine} /> 
+             </TouchableOpacity> 
+
+             <TouchableOpacity 
+                onPress={() => onOutingPress()}> 
+                    <Image  
+                        source = {require('../../../assets/outingform.png')}  
                         style = {styles.ImageIconStyle} 
                     /> 
                     <View style={styles.SeparatorLine} /> 

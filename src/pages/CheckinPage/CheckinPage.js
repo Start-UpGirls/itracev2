@@ -11,23 +11,6 @@ class CheckinPage extends Component {
     
   }
 
-  constructor(props) {
-    super(props);
-    this.subscriber =
-      firebase.firestore()
-        .collection("users")
-        .where("authorID", "==", firebase.auth().currentUser.uid)
-        //.orderBy('createdAt')
-        //.limit(1)
-        .onSnapshot(docs => {
-          let users = []
-          docs.forEach( doc => {
-            users.push(doc.data())
-          })
-          this.setState({ users })
-          console.log(users)
-        })
-                  }
   
   render() {
     return (

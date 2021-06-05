@@ -13,6 +13,7 @@ import { LoginPage,
           ProfilePage,
           SopPage,
           HelpPage,
+          OutingPage,
           HotPage,
         } from './src/pages'
 import {decode, encode} from 'base-64'
@@ -99,6 +100,10 @@ export default function App() {
               name="Hotspot" 
               component={ HotPage }
               options = {{ title: 'Hot Spots for COVID19'}} />
+            <Stack.Screen 
+              name="Outing" 
+              component={ OutingPage }
+              options = {{ title: 'Outing Form'}} />
       </Stack.Navigator>
     </NavigationContainer>
   );

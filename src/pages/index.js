@@ -19,3 +19,5 @@ export { default as SopPage } from './SopPage/SopPage'
 export { default as HelpPage } from './HelpPage/HelpPage'
 
 export { default as HotPage } from './HotPage/HotPage'
+
+export { default as OutingPage } from './OutingPage/OutingPage'
