@@ -16,7 +16,7 @@ export default function HelpPage({props}) {
                 />
                 <Text style = { styles.header }>Standard of Procedures from IIUM Student Union</Text>
                 <Image
-                    style={styles.logo}
+                    style={styles.image}
                     source={require('../../../assets/help.jpg')}
                 />
 

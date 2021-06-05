@@ -14,11 +14,19 @@ export default StyleSheet.create({
         margin: 30
     },
 
+    image: {
+        flex: 1,
+        width: 500,
+        height: 600,
+        resizeMode: 'contain',
+        alignSelf: "center",
+      },
+
     header: {
         flex: 1,
-        marginLeft: 350,
         marginTop: 50,
         fontSize: 30,
+        textAlign: "center"
     },
   
     footerView: {

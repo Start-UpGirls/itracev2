@@ -13,12 +13,19 @@ export default StyleSheet.create({
         alignSelf: "center",
         margin: 30
     },
+    image: {
+        flex: 1,
+        width: 400,
+        height: 200,
+        resizeMode: 'contain',
+        alignSelf: "center",
+      },
 
     header: {
         flex: 1,
-        marginLeft: 350,
         marginTop: 50,
         fontSize: 30,
+        textAlign: "center"
     },
   
     footerView: {

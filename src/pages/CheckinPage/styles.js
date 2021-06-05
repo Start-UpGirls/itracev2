@@ -17,9 +17,9 @@ export default StyleSheet.create({
 
     word: {
         flex: 1,
-        marginLeft: 500,
         marginTop: 50,
         fontSize: 30,
+        textAlign: "center"
     },
 
     button: {
