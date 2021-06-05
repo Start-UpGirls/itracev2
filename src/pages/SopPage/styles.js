@@ -17,7 +17,7 @@ export default StyleSheet.create({
         flex: 1,
         resizeMode: "cover",
         width: 450,
-        height: 820,
+        height: 1100,
         justifyContent: "center"
       },
 

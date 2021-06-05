@@ -33,13 +33,13 @@ export default StyleSheet.create({
         flex: 1,
         resizeMode: "cover",
         width: 450,
-        height: 820,
-        justifyContent: "center"
+        height: 2500,
+        justifyContent: "stretch"
       },
 
     button: {
         backgroundColor: '#ffcce7',
-        marginLeft: 100,
+        marginLeft: 125,
         marginRight: 30,
         marginTop: 20,
         height: 100,
