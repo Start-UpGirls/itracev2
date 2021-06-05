@@ -35,6 +35,14 @@ export default function HomePage({navigation}) {
     return (
         <View style={styles.container}>
             <View style={{flexDirection:'row', alignItems:'center', flexWrap: 'wrap', marginTop: 110, marginLeft: 30}}>
+            <TouchableOpacity 
+                onPress={() => onProfilePress()}> 
+                    <Image  
+                        source = {require('../../../assets/profile.png')}  
+                        style = {styles.ImageIconStyle} 
+                    /> 
+                    <View style={styles.SeparatorLine} /> 
+             </TouchableOpacity> 
 
              <TouchableOpacity 
                 onPress={() => onAssessPress()}> 
@@ -45,19 +53,11 @@ export default function HomePage({navigation}) {
                     <View style={styles.SeparatorLine} /> 
              </TouchableOpacity> 
 
-             <TouchableOpacity 
-                onPress={() => onProfilePress()}> 
-                    <Image  
-                        source = {require('../../../assets/profile.png')}  
-                        style = {styles.ImageIconStyle} 
-                    /> 
-                    <View style={styles.SeparatorLine} /> 
-             </TouchableOpacity> 
-
+            
              <TouchableOpacity 
                 onPress={() => onSOPPress()}> 
                     <Image  
-                        source = {require('../../../assets/sop.png')}  
+                        source = {require('../../../assets/sopi.png')}  
                         style = {styles.ImageIconStyle} 
                     /> 
                     <View style={styles.SeparatorLine} /> 
