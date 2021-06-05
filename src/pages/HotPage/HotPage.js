@@ -85,35 +85,43 @@ class HotPage extends Component {
                </View>
                <View
                     style={styles.button}>
-                    <Text style={styles.buttonTitle}>Maryam = {Number(place.maryam)}</Text>
+                    <Text style={styles.buttonTitle}>Maryam </Text>
+                    <Text style={styles.buttonTitle}>{Number(place.maryam)}</Text>
                </View>
                <View
                     style={styles.button}>
-                    <Text style={styles.buttonTitle}>Nusaibah = {Number(place.nusaibah)}</Text>
+                    <Text style={styles.buttonTitle}>Nusaibah </Text>
+                    <Text style={styles.buttonTitle}>{Number(place.nusaibah)}</Text>
                </View>
                <View
                     style={styles.button}>
-                    <Text style={styles.buttonTitle}>Ruqayyah = {Number(place.ruqayyah)}</Text>
+                    <Text style={styles.buttonTitle}>Ruqayyah</Text>
+                    <Text style={styles.buttonTitle}>{Number(place.ruqayyah)}</Text>
                </View>
                <View
                     style={styles.button}>
-                    <Text style={styles.buttonTitle}>Safiyyah = {Number(place.safiyyah)}</Text>
+                    <Text style={styles.buttonTitle}>Safiyyah</Text>
+                    <Text style={styles.buttonTitle}>{Number(place.safiyyah)}</Text>
                </View>
                <View
                     style={styles.button}>
-                    <Text style={styles.buttonTitle}>Salahuddin Al-Ayyubi = {Number(place.salah)}</Text>
+                    <Text style={styles.buttonTitle}>Salahuddin Al-Ayyubi</Text>
+                    <Text style={styles.buttonTitle}>{Number(place.salah)}</Text>
                </View>
                <View
                     style={styles.button}>
-                    <Text style={styles.buttonTitle}>Sumayyah = {Number(place.sumayyah)}</Text>
+                    <Text style={styles.buttonTitle}>Sumayyah </Text>
+                    <Text style={styles.buttonTitle}>{Number(place.sumayyah)}</Text>
                </View>
                <View
                     style={styles.button}>
-                    <Text style={styles.buttonTitle}>Uthman Bin Al-Affan = {Number(place.uthman)}</Text>
+                    <Text style={styles.buttonTitle}>Uthman Bin Al-Affan</Text>
+                    <Text style={styles.buttonTitle}>{Number(place.uthman)}</Text>
                </View>
                <View
                     style={styles.button}>
-                    <Text style={styles.buttonTitle}>Zubair Al-Awwam = {Number(place.zubair)}</Text>
+                    <Text style={styles.buttonTitle}>Zubair Al-Awwam</Text>
+                    <Text style={styles.buttonTitle}>{Number(place.zubair)}</Text>
                </View>
               
                </View>)}

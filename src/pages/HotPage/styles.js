@@ -31,7 +31,7 @@ export default StyleSheet.create({
     }, 
 
     button: {
-        backgroundColor: '#252222',
+        backgroundColor: '#bc8f8f',
         marginLeft: 100,
         marginRight: 30,
         marginTop: 20,
@@ -43,7 +43,7 @@ export default StyleSheet.create({
     },
 
     buttonTitle: {
-        color: 'white',
+        color: 'grey',
         fontSize: 20,
         fontWeight: "bold",
         textAlign: 'center'
