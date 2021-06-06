@@ -32,10 +32,36 @@ export default StyleSheet.create({
         backgroundColor: '#ffcce7',
         marginLeft: 30,
         marginRight: 30,
-        marginTop: 20,
+        marginTop: 5,
         height: 48,
         borderRadius: 5,
         alignItems: "center",
+        justifyContent: 'center'
+    },
+
+    display: {
+        backgroundColor: '#EBF4FA',
+        borderRadius: 5,
+        overflow: 'hidden',
+        marginLeft: 30,
+        marginRight: 30,
+        marginTop: 5,
+        marginBottom: 5,
+        height: 48,
+        paddingLeft: 16,
+        justifyContent: 'center'
+    },
+
+    buttons: {
+        backgroundColor: '#EBF4FA',
+        borderRadius: 5,
+        overflow: 'hidden',
+        marginLeft: 30,
+        marginRight: 30,
+        marginTop: 5,
+        marginBottom: 5,
+        height: 160,
+        paddingLeft: 16,
         justifyContent: 'center'
     },
 
@@ -47,7 +73,7 @@ export default StyleSheet.create({
     image: {
         flex: 1,
         resizeMode: "cover",
-        width: 450,
+        width: 400,
         height: 820,
         justifyContent: "center"
       },
