@@ -16,7 +16,7 @@ export default StyleSheet.create({
     image: {
         flex: 1,
         resizeMode: "cover",
-        width: 450,
+        width: 400,
         height: 820,
         justifyContent: "center"
       },
