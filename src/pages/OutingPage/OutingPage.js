@@ -22,9 +22,10 @@ const OpenURLButton = ({ url, children }) => {
 const App = () => {
   return (
     <View style={styles.container}>
+    <ImageBackground source={require('../../../assets/background1.jpeg')} style={styles.image}>
       <OpenURLButton url={supportedURL}> MCO Outing Form</OpenURLButton><br></br>
       <OpenURLButton url={unsupportedURL}>Weekly Outing</OpenURLButton>
-      <ImageBackground source={require('../../../assets/background1.jpeg')} style={styles.image}></ImageBackground>
+      </ImageBackground>
     </View>
     
   );
@@ -32,6 +33,12 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: "center", alignItems: "center", backgroundColor:'#D2E4D2' },
-});
-
+  image: {
+    flex: 1,
+    resizeMode: "cover",
+    width: 450,
+    height: 820,
+    justifyContent: "center"
+  },
+})
 export default App;
